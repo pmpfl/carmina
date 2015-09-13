@@ -1,0 +1,8 @@
+- name: Pilhas
+  description: Tudo o tipo de pilhas
+
+- name: Brinquedos
+  description: Pequenos Brinquedos
+
+- name: Arranjos
+  description: Arranjos

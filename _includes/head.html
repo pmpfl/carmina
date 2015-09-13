@@ -1,0 +1,42 @@
+<head>
+  <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="Carmina famalicao">
+  <meta name="keywords" content="Carmina, famalicao">
+  <meta name="author" content="devsuper.com">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Favicons ================================================== -->
+  <link rel="shortcut icon" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/fonts/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}">
+
+  <!-- Slider   ================================================== -->
+  <link href="{{ "/css/owl.carousel.css" | prepend: site.baseurl }}" rel="stylesheet" media="screen">
+  <link href="{{ "/css/owl.theme.css" | prepend: site.baseurl }}" rel="stylesheet" media="screen">
+
+  <!-- Stylesheet ================================================== -->
+  <link rel="stylesheet" type="text/css"  href="{{ "/css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/responsive.css" | prepend: site.baseurl }}">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="{{ "/js/modernizr.custom.js" | prepend: site.baseurl }}"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>

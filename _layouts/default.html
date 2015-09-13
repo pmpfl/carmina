@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body data-spy="scroll">
+
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">{{ site.data.wording.page_title }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll"><i class="fa fa-home fa-6"></i></a></li>
+            <li><a href="#tf-about" class="page-scroll">{{ site.data.wording.about_main }}</a></li>
+            <li><a href="#tf-team" class="page-scroll">{{ site.data.wording.team_main }}</a></li>
+            <li><a href="#tf-works" class="page-scroll">{{ site.data.wording.product_main }}</a></li>
+            <li><a href="#tf-testimonials" class="page-scroll">{{ site.data.wording.testimonials_main}}</a></li>
+            <li><a href="#tf-contact" class="page-scroll">{{ site.data.wording.contact_main}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="content">
+                <h1 style="font-size: 100px"><strong><span class="color">{{ site.data.wording.page_title }}</span></strong></h1>
+                <p class="lead">{{ site.data.wording.description_header }}</p>
+                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Page ==========================================-->
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/02.png" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4>{{ site.data.wording.about_main }}</h4>
+                            <h2>{{ site.data.wording.subheader_about }}</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">{{ site.data.wording.intro_about }}</p>
+                        <ul class="about-list">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                {{ site.data.wording.intro_1_about}}
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                {{ site.data.wording.intro_2_about}}
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                {{ site.data.wording.intro_3_about}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Page ==========================================-->
+    <div id="tf-team" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>{{ site.data.wording.team_titile }}</h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div id="team" class="owl-carousel owl-theme row">
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/01.jpg" alt="{{ site.data.wording.team_1_name }}" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>{{ site.data.wording.team_1_name }}</h3>
+                                <p>{{ site.data.wording.team_1_position }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/02.jpg" alt="{{ site.data.wording.team_2_name }}" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>{{ site.data.wording.team_2_name }}</h3>
+                                <p>{{ site.data.wording.team_2_position }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/03.jpg" alt="{{ site.data.wording.team_3_name }}" class="img-circle team-img">
+                            <div class="caption">
+                                <h3>{{ site.data.wording.team_3_name }}</h3>
+                                <p>{{ site.data.wording.team_3_position }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section ==========================================-->
+    <div id="tf-works">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2>{{ site.data.wording.products_title }}</h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="space"></div>
+            {{ content }}
+        </div>
+    </div>
+
+    <!-- Testimonials Section ==========================================-->
+    <div id="tf-testimonials" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2><strong>{{ site.data.wording.testimonials_title }}</h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div id="testimonial" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <h5>{{ site.data.wording.testimonials_1_description }}</h5>
+                                <p>{{ site.data.wording.testimonials_1_person }}</p>
+                            </div>
+                            <div class="item">
+                                <h5>{{ site.data.wording.testimonials_1_description }}</h5>
+                                <p>{{ site.data.wording.testimonials_1_person }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section ==========================================-->
+    <div id="tf-contact" class="text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="section-title center">
+                        <h2>{{ site.data.wording.contacts_title }}</h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker fa-fw"></i>{{ site.data.wording.contacts_1 }}</li>
+                    <li>{{ site.data.wording.contacts_2 }}</li>
+                    <li></li>
+                    <li><i class="fa fa-phone fa-fw"></i>{{ site.data.wording.contacts_3 }}</li>
+                    <li><i class="fa fa-envelope fa-fw"></i>{{ site.data.wording.contacts_4 }}</li>
+                  </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <iframe frameborder="0" style="border:0;width:100%;height:500px;" src="https://www.google.com/maps/embed/v1/place?q=41.406871,-8.518463&key=AIzaSyDEPCd3wG-EsanljDGNfHkeMfuFJ6h6Bvs&maptype=satellite" allowfullscreen></iframe>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
