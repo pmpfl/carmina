@@ -1,8 +1,15 @@
 - name: Pilhas
   description: Tudo o tipo de pilhas
+  url: 01.jpg
 
 - name: Brinquedos
   description: Pequenos Brinquedos
+  url: 02.jpg
 
 - name: Arranjos
   description: Arranjos
+  url: 03.jpg
+
+- name: Arranjos
+  description: Arranjos
+  url: 04.jpg
