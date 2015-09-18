@@ -1,15 +1,15 @@
 - name: Pilhas
-  description: Tudo o tipo de pilhas
+  description: Colocação de pilhas
   url: 01.jpg
 
 - name: Brinquedos
-  description: Pequenos Brinquedos
+  description: Brinquedos para todos os gostos
   url: 02.jpg
 
-- name: Arranjos
-  description: Arranjos
+- name: Pequena Eletrónica
+  description: Calculadoras, despertadores...
   url: 03.jpg
 
-- name: Arranjos
-  description: Arranjos
+- name:  Brinquedos de Coleção
+  description: Brinquedos para todos os gostos
   url: 04.jpg
