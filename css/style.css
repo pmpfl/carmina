@@ -337,7 +337,6 @@ ol.type li a.active { font-weight: 700; }
 	margin-bottom: 30px;
 }
 .portfolio-item .hover-bg{
-	height: 260px;
 	overflow: hidden;
 	position: relative;
 }

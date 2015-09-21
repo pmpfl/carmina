@@ -2,7 +2,8 @@ page_title: Carmina
 about_main: Sobre Carmina
 team_main: A Família
 product_main: Produtos
-testimonials_main: Testemunhos
+#testimonials_main: Testemunhos
+testimonials_main: Facebook
 contact_main: Contatos
 
 description_header: Uma loja com <strong>VIDA</strong>
@@ -29,7 +30,8 @@ team_3_img: 3.jpg
 
 products_title: O que pode encontrar na nossa loja
 
-testimonials_title: O que os nossos clientes dizem
+#testimonials_title: O que os nossos clientes dizem
+testimonials_title: As ultimas novidades
 
 testimonials_1_description: Uma loja de família onde pode encontrar tudo o que precisa.
 testimonials_1_person: <strong>Andreia Pinho</strong>
