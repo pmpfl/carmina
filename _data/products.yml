@@ -1,15 +1,15 @@
-- name: Pilhas
-  description: Colocação de pilhas
+- name: Canivetes suíços
+  description: Varias marcas...
   url: 01.jpg
 
-- name: Brinquedos
-  description: Brinquedos para todos os gostos
+- name: Pilhas
+  description: Colocação de pilhas, braceletes e arranjo de relógios.
   url: 02.jpg
 
-- name: Pequena Eletrónica
-  description: Calculadoras, despertadores...
+- name: Miniaturas de coleção
+  description: Coleçoes completas
   url: 03.jpg
 
-- name:  Brinquedos de Coleção
+- name:  Brinquedos
   description: Brinquedos para todos os gostos
   url: 04.jpg

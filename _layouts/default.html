@@ -5,8 +5,7 @@
 
   <body data-spy="scroll">
 
-    <!-- Navigation
-    ==========================================-->
+    <!-- Navigation   ==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,7 +25,7 @@
             <li><a href="#tf-about" class="page-scroll">{{ site.data.wording.about_main }}</a></li>
             <li><a href="#tf-team" class="page-scroll">{{ site.data.wording.team_main }}</a></li>
             <li><a href="#tf-works" class="page-scroll">{{ site.data.wording.product_main }}</a></li>
-            <li><a href="#tf-testimonials" class="page-scroll">{{ site.data.wording.testimonials_main}}</a></li>
+            <li><a href="#tf-testimonials" class="page-scroll">{{ site.data.wording.facebook_main}}</a></li>
             <li><a href="#tf-contact" class="page-scroll">{{ site.data.wording.contact_main}}</a></li>
           </ul>
         </div>
@@ -119,7 +118,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/{{ site.data.wording.team_2_img }}" alt="{{ site.data.wording.team_2_name }}" class="img-circle team-img">
@@ -129,7 +127,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/{{ site.data.wording.team_3_img }}" alt="{{ site.data.wording.team_3_name }}" class="img-circle team-img">
@@ -165,39 +162,24 @@
         <div class="overlay">
             <div class="container">
                  <div class="section-title center">
-                    <h2><strong>{{ site.data.wording.testimonials_title }}</h2>
+                    <h2><strong>{{ site.data.wording.facebook_title }}</h2>
                     <div class="line">
                         <hr>
                     </div>
                 </div>
-    <!--            <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id="testimonial" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <h5>{{ site.data.wording.testimonials_1_description }}</h5>
-                                <p>{{ site.data.wording.testimonials_1_person }}</p>
-                            </div>
-                            <div class="item">
-                                <h5>{{ site.data.wording.testimonials_2_description }}</h5>
-                                <p>{{ site.data.wording.testimonials_2_person }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                  <div class="row">
                      <div class="col-md-8 col-md-offset-2">
-                        <div class="social-feed-container"></div>
-                      </div>
+                       <div class="social-feed-container"></div>
+                    </div>
                 </div>
                 <div class="space"></div>
             </div>
         </div>
     </div>
 
-    <!-- Contact Section ==========================================-->
+    <!-- Contact Section ========================================== -->
     <div id="tf-contact" class="text-center">
         <div class="container">
-
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
 
@@ -209,8 +191,6 @@
                         <div class="clearfix"></div>
 
                     </div>
-
-
                 </div>
             </div>
             <div class="row">
@@ -221,6 +201,7 @@
                     <li></li>
                     <li><i class="fa fa-phone fa-fw"></i>{{ site.data.wording.contacts_3 }}</li>
                     <li><i class="fa fa-envelope fa-fw"></i>{{ site.data.wording.contacts_4 }}</li>
+
                   </ul>
                 </div>
             </div>
@@ -228,11 +209,11 @@
         </div>
     </div>
 
-    <iframe frameborder="0" style="border:0;width:100%;height:500px;" src="https://www.google.com/maps/embed/v1/place?q=41.406871,-8.518463&key=AIzaSyDEPCd3wG-EsanljDGNfHkeMfuFJ6h6Bvs&maptype=satellite" allowfullscreen></iframe>
-
+    <div class='embed-container maps'>
+      <iframe frameborder="0" style="border:0;width:100%;height:500px;" src="https://www.google.com/maps/embed/v1/place?q=41.406871,-8.518463&key=AIzaSyDEPCd3wG-EsanljDGNfHkeMfuFJ6h6Bvs&maptype=satellite" allowfullscreen></iframe>
+    </div>
 
     {% include footer.html %}
 
   </body>
-
 </html>

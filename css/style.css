@@ -391,7 +391,7 @@ ol.type li a.active { font-weight: 700; }
 }
 /* Testimonials Section */
 #tf-testimonials{
-	background: url(../img/05.jpg);
+	background: url(../img/04.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -646,4 +646,8 @@ nav#footer p{
     0%{transform:rotate(5deg);}
     50%{transform:rotate(-5deg);}
     100%{transform:rotate(5deg);}
+}
+
+.maps iframe{
+    pointer-events: none;
 }

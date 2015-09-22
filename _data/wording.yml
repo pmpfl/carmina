@@ -3,7 +3,7 @@ about_main: Sobre Carmina
 team_main: A Família
 product_main: Produtos
 #testimonials_main: Testemunhos
-testimonials_main: Facebook
+facebook_main: Facebook
 contact_main: Contatos
 
 description_header: Uma loja com <strong>VIDA</strong>
@@ -30,18 +30,20 @@ team_3_img: 3.jpg
 
 products_title: O que pode encontrar na nossa loja
 
+facebook_title: As ultimas novidades
+
 #testimonials_title: O que os nossos clientes dizem
-testimonials_title: As ultimas novidades
+facebook_title: As ultimas novidades
 
-testimonials_1_description: Uma loja de família onde pode encontrar tudo o que precisa.
-testimonials_1_person: <strong>Andreia Pinho</strong>
+#testimonials_1_description: Uma loja de família onde pode encontrar tudo o que precisa.
+#testimonials_1_person: <strong>Andreia Pinho</strong>
 
-testimonials_2_description: Frequento esta loja diariamente, otimo atendimento.
-testimonials_2_person: <strong>Sara Silva</strong>
+#testimonials_2_description: Frequento esta loja diariamente, otimo atendimento.
+#testimonials_2_person: <strong>Sara Silva</strong>
 
 
 contacts_title: Onde nos pode encontrar
 contacts_1: Praça D. Maria II Nº1036
 contacts_2: Vila Nova de Famalicão - Portugal
 contacts_3: 901293133
-contacts_4: test@test.pt
+contacts_4: carminat@hotmail.pt
