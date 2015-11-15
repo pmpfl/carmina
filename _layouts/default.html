@@ -142,9 +142,9 @@
         </div>
     </div>
 
-    <!-- Portfolio Section ==========================================-->
+    <!-- Portfolio Section ==========================================
     <div id="tf-works">
-        <div class="container"> <!-- Container -->
+        <div class="container">]
             <div class="section-title text-center center">
                 <h2>{{ site.data.wording.products_title }}</h2>
                 <div class="line">
@@ -155,7 +155,54 @@
             <div class="space"></div>
             {{ content }}
         </div>
-    </div>
+    </div>-->
+
+    <div id="tf-works">
+    		<div class="container">
+          <div class="section-title text-center center">
+              <h2>{{ site.data.wording.products_title }}</h2>
+              <div class="line">
+                  <hr>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+          	<div id="grid-gallery" class="grid-gallery">
+              	<section class="grid-wrap">
+                  <ul class="grid">
+                    	<li class="grid-sizer" ></li><!-- for Masonry column width -->
+                      {% for product in site.data.products %}
+                      <li >
+                        <figure>
+                          <img src="img/products/{{ product.url}}" alt="">
+                          <figcaption><h3>{{ product.name }}</h3><p>{{ product.description }}</p></figcaption>
+                        </figure>
+                      </li>
+                      {% endfor %}
+                </ul>
+              </section>
+
+
+    					<section class="slideshow">
+    						<ul class="">
+                  {% for product in site.data.products %}
+                  <li >
+                    <figure>
+                      <img src="img/products/{{ product.url}}" alt="">
+                      <figcaption><h3>{{ product.name }}</h3><p>{{ product.description }}</p></figcaption>
+                    </figure>
+                  </li>
+                  {% endfor %}
+    						</ul>
+    						<nav>
+    							<span class="icon nav-prev"></span>
+    							<span class="icon nav-next"></span>
+    							<span class="icon nav-close"></span>
+    						</nav><
+    						<div class="info-keys icon">Navigate with arrow keys</div>
+    					</section><!-- // end slideshow -->
+    				</div><!-- // grid-gallery -->
+    			</div>
+    	</div>
 
     <!-- Testimonials Section ==========================================-->
     <div id="tf-testimonials" class="text-center">
