@@ -870,10 +870,14 @@ span.nav-close:before {
 			left:0;
 			margin:0;
 	}
+	.slideshow figcaption {
+		margin-top: 20%;
+	}
+
 	.slideshow li figure img {
 			width:auto;
 			margin:0 auto;
-			max-width:100%;
+			max-width:100%;	
 	}
 	.slideshow nav span,.slideshow nav span.nav-close {
 			font-size:1.8em;
