@@ -6,6 +6,7 @@ body, html{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
+	overflow-x: hidden;
 }
 
 h1{
@@ -825,7 +826,7 @@ span.nav-next:before {
 span.nav-close:before {
 	content: "\f00d";
 }
-/* Info on arrow key navigation */
+/* Info on arrow key navigation
 .info-keys {
 	position:fixed;
 	top:10px;
@@ -855,7 +856,7 @@ span.nav-close:before {
 .info-keys:after {
 	right:10px;
 	content: "\e604";
-}
+}*/
 /* Example media queries (reduce number of columns and change slideshow layout) */
 @media screen and (max-width:60em) {
 	/* responsive columns;see "Element sizing" on http://masonry.desandro.com/options.html */
@@ -868,7 +869,6 @@ span.nav-close:before {
 			top:0;
 			left:0;
 			margin:0;
-			margin-top: 3em;
 	}
 	.slideshow li figure img {
 			width:auto;
@@ -879,9 +879,9 @@ span.nav-close:before {
 			font-size:1.8em;
 			padding:0.3em;
 	}
-	.info-keys {
+/*	.info-keys {
 			display:none;
-	}
+	}*/
 }
 @media screen and (max-width:35em) {
 	.grid li {
