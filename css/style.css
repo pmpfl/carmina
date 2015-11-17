@@ -6,6 +6,7 @@ body, html{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
+	overflow: hidden;
 }
 
 h1{
@@ -868,6 +869,7 @@ span.nav-close:before {
 			top:0;
 			left:0;
 			margin:0;
+			margin-top: 3em;
 	}
 	.slideshow li figure img {
 			width:auto;

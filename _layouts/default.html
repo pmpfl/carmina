@@ -180,15 +180,13 @@
                       {% endfor %}
                 </ul>
               </section>
-
-
     					<section class="slideshow">
     						<ul class="">
                   {% for product in site.data.products %}
                   <li >
                     <figure>
-                      <img src="img/products/{{ product.url}}" alt="">
                       <figcaption><h3>{{ product.name }}</h3><p>{{ product.description }}</p></figcaption>
+                      <img src="img/products/{{ product.url}}" alt="">
                     </figure>
                   </li>
                   {% endfor %}
@@ -197,7 +195,7 @@
     							<span class="icon nav-prev"></span>
     							<span class="icon nav-next"></span>
     							<span class="icon nav-close"></span>
-    						</nav><
+    						</nav>
     						<div class="info-keys icon">Navigate with arrow keys</div>
     					</section><!-- // end slideshow -->
     				</div><!-- // grid-gallery -->
