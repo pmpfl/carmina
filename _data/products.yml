@@ -1,15 +1,59 @@
-- name: Canivetes suíços
-  description: Varias marcas...
-  url: 01.jpg
+- name:
+  description:
+  url: 1.jpg
 
-- name: Pilhas
-  description: Colocação de pilhas, braceletes e arranjo de relógios.
-  url: 02.jpg
+- name:
+  description:
+  url: 2.jpg
 
-- name: Miniaturas de coleção
-  description: Coleçoes completas
-  url: 03.jpg
+- name:
+  description:
+  url: 3.jpg
 
-- name:  Brinquedos
-  description: Brinquedos para todos os gostos
-  url: 04.jpg
+- name:
+  description:
+  url: 4.jpg
+
+- name:
+  description:
+  url: 5.jpg
+
+- name:
+  description:
+  url: 6.jpg
+
+- name:
+  description:
+  url: 7.jpg
+
+- name:
+  description:
+  url: 8.jpg
+
+- name:
+  description:
+  url: 9.jpg
+
+- name:
+  description:
+  url: 10.jpg
+
+- name:
+  description:
+  url: 11.jpg
+
+- name:
+  description:
+  url: 12.jpg
+
+- name:
+  description:
+  url: 13.jpg
+
+- name:
+  description:
+  url: 14.jpg
+
+- name:
+  description:
+  url: 15.jpg

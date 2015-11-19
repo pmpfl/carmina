@@ -34,7 +34,7 @@
         $('.social-feed-container').socialfeed({
                     // FACEBOOK
                     facebook:{
-                        accounts: ['@teslamotors'],
+                        accounts: ['@carminafamalicao'],
                         limit: 3,
                         access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c' // APP_ID|APP_SECRET
                     },
@@ -48,13 +48,12 @@
                     //update_period: 5000,
                     // When all the posts are collected and displayed - this function is evoked
                     callback: function(){
-                        console.log('all posts are collected');
+                        //console.log('all posts are collected');
                     }
                 });
 
         $('.maps').click(function () {
               $('.maps iframe').css("pointer-events", "auto");
         });
-
     });
 </script>
