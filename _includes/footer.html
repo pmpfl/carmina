@@ -32,21 +32,17 @@
 <script>
     $(document).ready(function(){
         $('.social-feed-container').socialfeed({
-                    // FACEBOOK
                     facebook:{
-                        accounts: ['@carminafamalicao'],
+                        accounts: ['@lojacarmina'],
                         limit: 3,
                         access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c' // APP_ID|APP_SECRET
                     },
-                    // GENERAL SETTINGS
                     length:400,
                     show_media:true,
-                    // Moderation function - if returns false, template will have class hidden
                     moderation: function(content){
                         return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
                     },
                     //update_period: 5000,
-                    // When all the posts are collected and displayed - this function is evoked
                     callback: function(){
                         //console.log('all posts are collected');
                     }
