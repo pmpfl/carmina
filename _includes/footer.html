@@ -22,8 +22,9 @@
 <script src="{{ "/js/masonry.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/jquery.socialfeed.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/gallery.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/gridscroll.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.fb.albumbrowser.js" | prepend: site.baseurl }}"></script>
+
 
 <!-- Javascripts
 ================================================== -->
@@ -35,21 +36,52 @@
                     facebook:{
                         accounts: ['@lojacarmina'],
                         limit: 3,
-                        access_token: '150849908413827|a20e87978f1ac491a0c4a721c961b68c' // APP_ID|APP_SECRET
+                        access_token: '758182374282062|ff8a5479c2de435c87776fc2b11678eb' // APP_ID|APP_SECRET
                     },
                     length:400,
                     show_media:true,
                     moderation: function(content){
                         return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
                     },
-                    //update_period: 5000,
                     callback: function(){
-                        //console.log('all posts are collected');
+                        console.log('facebook posts');
                     }
                 });
 
         $('.maps').click(function () {
               $('.maps iframe').css("pointer-events", "auto");
         });
+
+        $(".fb-album-container").FacebookAlbumBrowser({
+                account: "lojacarmina",
+                accessToken: "758182374282062|ff8a5479c2de435c87776fc2b11678eb",
+                onlyAlbum: "1520863474878354",
+                showComments: true,
+                commentsLimit:3,
+                showAccountInfo: false,
+                showImageCount: false,
+                showImageText: false,
+                shareButton: false,
+                albumsPageSize: 0,
+                photosPageSize: 0,
+                lightbox: true,
+                photosCheckbox: false,
+				        pluginImagesPath: "../img/",
+                likeButton: false,
+                shareButton: false,
+                addThis:"ra-52638e915dd79612",
+                photoChecked: function(photo){
+                    console.log("PHOTO CHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                },
+                photoUnchecked: function (photo) {
+                    console.log("PHOTO UNCHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                      },
+                albumSelected: function (photo) {
+                    console.log("ALBUM CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                },
+                photoSelected: function (photo) {
+                    console.log("PHOTO CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                  }
+            });
     });
 </script>
